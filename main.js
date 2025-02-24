@@ -93,3 +93,9 @@ function esperarISaludar(nom, callBack) {
     callBack(nom);
   }, 2000);
 }
+
+function processElements(array, callBack) {
+  for (let i = 0; i < array.length; i++) {
+    callBack(array[i]);
+  }
+}
