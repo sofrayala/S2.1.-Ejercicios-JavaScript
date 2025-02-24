@@ -60,3 +60,14 @@ function encontrarMaximo(num1, num2, num3) {
 }
 
 console.log(encontrarMaximo(20, 60, 3));
+
+const parOImpar = (num) => {
+  let resultado = "";
+  for (let i = 0; i < num.length; i++) {
+    resultado += num[i] % 2 === 0 ? "Par " : "Impar ";
+  }
+  return resultado;
+};
+
+const test3 = [1, 5, 8];
+console.log(parOImpar(test3));
