@@ -35,3 +35,9 @@ function puedeConducir(edad) {
   return edad >= 18 ? "Puedes conducir" : "No puedes conducir";
 }
 console.log(puedeConducir(20));
+
+function esMayor(num1, num2) {
+  return num1 > num2 ? `${num1} es mayor` : `${num2} es mayor`;
+}
+
+console.log(esMayor(1, 32));
