@@ -29,6 +29,9 @@ setTimeout(() => {
   console.log("Delayed for 3 seconds.");
 }, 3000);
 
-setTimeout(() => {
-  console.log("Delayed 5 seconds");
-}, 5000);
+//Ej 1.2: Operador ternario
+
+function puedeConducir(edad) {
+  return edad >= 18 ? "Puedes conducir" : "No puedes conducir";
+}
+console.log(puedeConducir(20));
