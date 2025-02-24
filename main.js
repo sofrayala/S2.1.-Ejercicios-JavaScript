@@ -111,3 +111,10 @@ const arrayOne = [1, 2, 3];
 const arrayTwo = [4, 5, 6];
 const combinedArray = [...arrayOne, ...arrayTwo];
 console.log(combinedArray);
+
+function sum(...args) {
+  return args.reduce((total, num) => total + num, 0);
+}
+
+let test4 = sum(1, 2, 3);
+console.log(test4);
