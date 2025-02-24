@@ -87,3 +87,9 @@ function sumar(a, b) {
 
 const result = calculator(3, 1, sumar);
 console.log(result);
+
+function esperarISaludar(nom, callBack) {
+  setTimeout(() => {
+    callBack(nom);
+  }, 2000);
+}
