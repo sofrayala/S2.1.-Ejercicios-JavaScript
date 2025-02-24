@@ -104,3 +104,10 @@ function processString(string, callBack) {
   let upperCaseString = string.toUpperCase();
   callBack(upperCaseString);
 }
+
+//Ejercicio 1.4: Rest & Spread operators
+
+const arrayOne = [1, 2, 3];
+const arrayTwo = [4, 5, 6];
+const combinedArray = [...arrayOne, ...arrayTwo];
+console.log(combinedArray);
