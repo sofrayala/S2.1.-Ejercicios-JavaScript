@@ -39,5 +39,24 @@ console.log(puedeConducir(20));
 function esMayor(num1, num2) {
   return num1 > num2 ? `${num1} es mayor` : `${num2} es mayor`;
 }
-
 console.log(esMayor(1, 32));
+
+function numberType(num) {
+  return num === 0
+    ? `${num} es igual a 0 `
+    : num < 0
+    ? `${num} es negativo`
+    : `${num} es positivo`;
+}
+
+console.log(numberType(-9));
+
+function encontrarMaximo(num1, num2, num3) {
+  return num1 > num2 && num1 > num3
+    ? `El valor máximo es: ${num1}`
+    : num2 > num1 && num2 > num3
+    ? `El valor máximo es: ${num2}`
+    : `El valor máximo es: ${num3}`;
+}
+
+console.log(encontrarMaximo(20, 60, 3));
