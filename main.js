@@ -71,3 +71,9 @@ const parOImpar = (num) => {
 
 const test3 = [1, 5, 8];
 console.log(parOImpar(test3));
+
+//Ejercicio 1.3: Callbacks
+
+function procesar(num, callBack) {
+  callBack(num);
+}
