@@ -99,3 +99,8 @@ function processElements(array, callBack) {
     callBack(array[i]);
   }
 }
+
+function processString(string, callBack) {
+  let upperCaseString = string.toUpperCase();
+  callBack(upperCaseString);
+}
