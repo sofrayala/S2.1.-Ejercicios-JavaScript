@@ -77,3 +77,13 @@ console.log(parOImpar(test3));
 function procesar(num, callBack) {
   callBack(num);
 }
+
+function calculator(num1, num2, callBackCalc) {
+  return callBackCalc(num1, num2);
+}
+function sumar(a, b) {
+  return a + b;
+}
+
+const result = calculator(3, 1, sumar);
+console.log(result);
