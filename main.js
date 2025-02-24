@@ -1,4 +1,5 @@
 //Ej 1.1 Arrow functions
+
 const add = (a, b) => a + b;
 
 const randomNumber = () => Math.floor(Math.random() * 100) + 1;
@@ -115,6 +116,15 @@ console.log(combinedArray);
 function sum(...args) {
   return args.reduce((total, num) => total + num, 0);
 }
-
 let test4 = sum(1, 2, 3);
 console.log(test4);
+
+const obj1 = {
+  nombre: "Pepi",
+  edad: 18,
+};
+const obj2 = { ...obj1 };
+obj2.edad = 20;
+
+console.log(obj1);
+console.log(obj2);
