@@ -199,3 +199,7 @@ names.forEach((x) => console.log(x));
 for (const element of names) {
   console.log(element);
 }
+
+let numbers = [1, 2, 3, 4, 5, 6];
+let newNums = numbers.filter((x) => x % 2 === 0);
+console.log(newNums);
