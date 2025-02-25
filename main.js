@@ -155,3 +155,9 @@ const obj4 = {
 
 const mergedObjs = { ...obj3, ...obj4 };
 console.log(mergedObjs);
+
+//Ejercicio 1.5: Array transformations
+
+const arr = [1, 2, 3, 4];
+const map1 = arr.map((x) => x * x);
+console.log(map1);
