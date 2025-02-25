@@ -141,3 +141,17 @@ function add1(a, b, c) {
 const elements = [1, 2, 3];
 
 console.log(add1(...elements));
+
+const obj3 = {
+  especie: "Gato",
+  edad: 16,
+};
+
+const obj4 = {
+  peso: 40,
+  edad: 18,
+  color: "rayado",
+};
+
+const mergedObjs = { ...obj3, ...obj4 };
+console.log(mergedObjs);
