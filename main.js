@@ -128,3 +128,12 @@ obj2.edad = 20;
 
 console.log(obj1);
 console.log(obj2);
+
+const nums = [1, 2, 3, 4, 5];
+
+let a, b, rest;
+[a, b, ...rest] = nums;
+
+console.log(a);
+console.log(b);
+console.log(rest);
