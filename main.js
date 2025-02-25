@@ -125,15 +125,19 @@ const obj1 = {
 };
 const obj2 = { ...obj1 };
 obj2.edad = 20;
-
 console.log(obj1);
 console.log(obj2);
 
 const nums = [1, 2, 3, 4, 5];
-
 let a, b, rest;
 [a, b, ...rest] = nums;
-
 console.log(a);
 console.log(b);
 console.log(rest);
+
+function add1(a, b, c) {
+  return a + b + c;
+}
+const elements = [1, 2, 3];
+
+console.log(add1(...elements));
