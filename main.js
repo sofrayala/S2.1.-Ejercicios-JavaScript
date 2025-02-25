@@ -208,3 +208,11 @@ let obj5 = { name: "Ona", age: 25, city: "Barcelona" };
 for (const property in obj5) {
   console.log(`${property}: ${obj5[property]}`);
 }
+
+let numbers1 = [1, 2, 3, 4, 5, 6];
+for (const element of numbers1) {
+  console.log(element);
+  if (element === 5) {
+    break;
+  }
+}
