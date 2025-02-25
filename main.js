@@ -216,3 +216,7 @@ for (const element of numbers1) {
     break;
   }
 }
+
+for (const [index, name] of names.entries()) {
+  console.log(`Index: ${index}, Value: ${name}`);
+}
