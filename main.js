@@ -220,3 +220,14 @@ for (const element of numbers1) {
 for (const [index, name] of names.entries()) {
   console.log(`Index: ${index}, Value: ${name}`);
 }
+
+// Exercise 1.7: Promises & Async/Await
+const myPromise = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("Hello World");
+  }, 2000);
+});
+
+myPromise.then((result) => {
+  console.log(result);
+});
