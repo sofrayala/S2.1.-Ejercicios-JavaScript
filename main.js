@@ -158,9 +158,20 @@ console.log(mergedObjs);
 
 //Ejercicio 1.5: Array transformations
 
-const arr = [1, 2, 3, 4, 5, 7, 80];
+const arr = [1, 2, 3, 4];
 const map1 = arr.map((x) => x * x);
 console.log(map1);
 
 const filter1 = arr.filter((x) => x % 2 === 0);
 console.log(filter1);
+
+const arr2 = [1, 10, 8, 11];
+const found = arr2.find((x) => x > 10);
+console.log(found);
+
+const arr3 = [13, 7, 8, 21];
+const totalSum = arr3.reduce(
+  (accumulator, currentValue) => accumulator + currentValue,
+  0
+);
+console.log(totalSum);
