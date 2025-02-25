@@ -158,6 +158,9 @@ console.log(mergedObjs);
 
 //Ejercicio 1.5: Array transformations
 
-const arr = [1, 2, 3, 4];
+const arr = [1, 2, 3, 4, 5, 7, 80];
 const map1 = arr.map((x) => x * x);
 console.log(map1);
+
+const filter1 = arr.filter((x) => x % 2 === 0);
+console.log(filter1);
