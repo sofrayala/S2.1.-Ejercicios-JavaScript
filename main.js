@@ -253,3 +253,19 @@ async function run() {
   }
 }
 run();
+
+const myPromise2 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("First");
+  }, 2000);
+});
+
+const myPromise3 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("Second");
+  }, 3000);
+});
+
+Promise.all([myPromise2, myPromise3]).then((values) => {
+  console.log(values);
+});
