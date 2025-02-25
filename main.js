@@ -243,3 +243,13 @@ const myPromise1 = (input) => {
     }, 2000);
   });
 };
+
+async function run() {
+  try {
+    const result = await myPromise;
+    console.log(result);
+  } catch (error) {
+    console.error(error);
+  }
+}
+run();
