@@ -195,3 +195,7 @@ console.log(arr5.some(greaterThan));
 //Exercise 1.6: Array loops
 let names = ["Anna", "Bernat", "Clara"];
 names.forEach((x) => console.log(x));
+
+for (const element of names) {
+  console.log(element);
+}
