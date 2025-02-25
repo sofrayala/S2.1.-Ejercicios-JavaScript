@@ -203,3 +203,8 @@ for (const element of names) {
 let numbers = [1, 2, 3, 4, 5, 6];
 let newNums = numbers.filter((x) => x % 2 === 0);
 console.log(newNums);
+
+let obj5 = { name: "Ona", age: 25, city: "Barcelona" };
+for (const property in obj5) {
+  console.log(`${property}: ${obj5[property]}`);
+}
