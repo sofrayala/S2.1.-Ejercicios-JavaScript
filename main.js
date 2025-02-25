@@ -175,3 +175,14 @@ const totalSum = arr3.reduce(
   0
 );
 console.log(totalSum);
+
+const arr4 = [1, 3, 7, 10, 15, 17, 11, 5, 8, 12, 9];
+
+const filterDoubleSum = (arr4) =>
+  arr4
+    .filter((x) => x >= 10)
+    .map((x) => x * 2)
+    .reduce((sum, x) => sum + x, 0);
+
+const resultEx5 = filterDoubleSum(arr4);
+console.log(resultEx5);
