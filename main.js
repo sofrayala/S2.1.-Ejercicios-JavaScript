@@ -231,3 +231,15 @@ const myPromise = new Promise((resolve, reject) => {
 myPromise.then((result) => {
   console.log(result);
 });
+
+const myPromise1 = (input) => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (input === "Hello") {
+        resolve("Input is Hello");
+      } else {
+        reject("Input is not Hello");
+      }
+    }, 2000);
+  });
+};
