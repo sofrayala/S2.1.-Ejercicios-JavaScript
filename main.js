@@ -186,3 +186,8 @@ const filterDoubleSum = (arr4) =>
 
 const resultEx5 = filterDoubleSum(arr4);
 console.log(resultEx5);
+
+const arr5 = [9, 11, 12, 13, 14];
+const greaterThan = (x) => x > 10;
+console.log(arr5.every(greaterThan));
+console.log(arr5.some(greaterThan));
